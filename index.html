@@ -3,110 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impulse Studios - Crafting Immersive Gaming Experiences</title>
+    <title>Impulse Studios - Gaming Experiences</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loader-content">
-            <div class="play-button-loader">▶</div>
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader-container">
+            <div class="play-button">▶</div>
             <div class="spinner"></div>
-            <p class="loading-text">Loading Impulse Studios...</p>
+            <p>Loading games...</p>
         </div>
     </div>
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <span class="logo-icon">▶</span>
-                    <span class="logo-text">Impulse Studios</span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact" class="contact-btn">Contact Us</a></li>
-                </ul>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="play-icon">▶</span>
+                <span class="logo-text">Impulse Studios</span>
             </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="btn-contact">Contact Us</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero/Loading Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Impulse Studios</h1>
-                <p class="hero-subtitle">Crafting Immersive Gaming Experiences</p>
-            </div>
+        <div class="hero-content">
+            <h1>Impulse Studios</h1>
+            <p>Crafting Immersive Gaming Experiences</p>
         </div>
     </section>
 
-    <!-- Main Banner -->
-    <section class="banner">
-        <div class="banner-content">
-            <h2>Where Innovation Meets Technology</h2>
-            <p>Building the next generation of interactive entertainment</p>
-            <div class="banner-stats">
-                <div class="stat">
-                    <h3>500M+</h3>
-                    <p>GAMEPLAY HOURS</p>
+    <!-- Main Banner Section -->
+    <section class="banner-section">
+        <div class="banner-inner">
+            <h2>Crafting Immersive Gaming Experiences</h2>
+            <p>Where creativity meets technology to build the next generation of interactive entertainment</p>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>139.6M</h3>
+                    <p>PLAY SESSIONS</p>
                 </div>
-                <div class="stat">
-                    <h3>250+</h3>
+                <div class="stat-box">
+                    <h3>122</h3>
                     <p>ACTIVE PLAYERS</p>
                 </div>
             </div>
+            
             <div class="banner-buttons">
-                <button class="btn btn-primary">LEARN MORE ></button>
-                <button class="btn btn-secondary">GET STARTED</button>
+                <button class="btn btn-purple">LEARN MORE ></button>
+                <button class="btn btn-outline">GET STARTED</button>
             </div>
         </div>
     </section>
 
-    <!-- Experiences Section -->
-    <section id="experiences" class="experiences">
-        <div class="container">
+    <!-- Experiences/Games Section -->
+    <section id="experiences" class="experiences-section">
+        <div class="section-container">
             <h2>Our Experiences</h2>
-            <div class="game-grid">
-                <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);"></div>
-                </div>
-                <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);"></div>
-                </div>
-                <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);"></div>
-                </div>
-                <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);"></div>
-                </div>
-                <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);"></div>
-                </div>
-                <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);"></div>
-                </div>
+            <div class="games-grid">
+                <div class="game-item"></div>
+                <div class="game-item"></div>
+                <div class="game-item"></div>
+                <div class="game-item"></div>
+                <div class="game-item"></div>
+                <div class="game-item"></div>
             </div>
-            <button class="btn btn-primary view-all">VIEW ALL GAMES ></button>
+            <button class="btn btn-purple">VIEW ALL GAMES ></button>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
+    <section id="services" class="services-section">
+        <div class="section-container">
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🎮</div>
-                    <h3>Game Development</h3>
-                    <p>End-to-end game creation from concept to launch. We specialize in crafting engaging, innovative gaming experiences across multiple platforms.</p>
+                    <h3>Game Acquisition</h3>
+                    <p>We help developers and publishers find the perfect games for their portfolio. Our expertise in market analysis and player behavior ensures successful acquisitions.</p>
                     <ul>
-                        <li>✓ Full Development Pipeline</li>
-                        <li>✓ Engine Optimization</li>
-                        <li>✓ Cross-Platform Support</li>
+                        <li>Market Research & Analysis</li>
+                        <li>Due Diligence</li>
+                        <li>Negotiation Support</li>
                     </ul>
                 </div>
                 <div class="service-card">
@@ -114,9 +100,9 @@
                     <h3>Game Consulting</h3>
                     <p>Expert guidance for game development, monetization strategies, and market positioning. We help turn your vision into a successful gaming experience.</p>
                     <ul>
-                        <li>✓ Design Strategy</li>
-                        <li>✓ Monetization Optimization</li>
-                        <li>✓ Player Engagement</li>
+                        <li>Development Strategy</li>
+                        <li>Monetization Optimization</li>
+                        <li>Player Engagement</li>
                     </ul>
                 </div>
             </div>
@@ -124,8 +110,8 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
+    <section id="contact" class="contact-section">
+        <div class="section-container">
             <h2>Contact Us</h2>
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
@@ -140,7 +126,7 @@
                     <label for="service">Service Interest</label>
                     <select id="service" name="service" required>
                         <option value="">Select a service</option>
-                        <option value="development">Game Development</option>
+                        <option value="acquisition">Game Acquisition</option>
                         <option value="consulting">Game Consulting</option>
                         <option value="other">Other</option>
                     </select>
@@ -149,36 +135,34 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                <button type="submit" class="btn btn-purple">SEND MESSAGE</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Impulse Studios</h4>
-                    <p>Crafting immersive gaming experiences since 2024</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#experiences">Portfolio</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>Email: hello@impulsestudios.com</p>
-                </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Impulse Studios</h4>
+                <p>Crafting immersive gaming experiences since 2024</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Impulse Studios. All rights reserved.</p>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experiences">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <p>Email: hello@impulsestudios.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Impulse Studios. All rights reserved.</p>
         </div>
     </footer>
 
