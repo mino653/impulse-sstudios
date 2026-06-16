@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-content">
+            <div class="play-button-loader">▶</div>
+            <div class="spinner"></div>
+            <p class="loading-text">Loading Impulse Studios...</p>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -27,20 +36,19 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="loading-container">
-                <div class="play-button">▶</div>
-                <div class="spinner"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Impulse Studios</h1>
+                <p class="hero-subtitle">Crafting Immersive Gaming Experiences</p>
             </div>
-            <p class="loading-text">Loading experiences...</p>
         </div>
     </section>
 
     <!-- Main Banner -->
     <section class="banner">
         <div class="banner-content">
-            <h1>Crafting Immersive Gaming Experiences</h1>
-            <p>Where innovation meets technology to build the next generation of interactive entertainment</p>
+            <h2>Where Innovation Meets Technology</h2>
+            <p>Building the next generation of interactive entertainment</p>
             <div class="banner-stats">
                 <div class="stat">
                     <h3>500M+</h3>
@@ -64,22 +72,22 @@
             <h2>Our Experiences</h2>
             <div class="game-grid">
                 <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="game-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);"></div>
                 </div>
                 <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="game-placeholder" style="background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);"></div>
                 </div>
                 <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="game-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);"></div>
                 </div>
                 <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <div class="game-placeholder" style="background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);"></div>
                 </div>
                 <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="game-placeholder" style="background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);"></div>
                 </div>
                 <div class="game-card">
-                    <div class="game-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <div class="game-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);"></div>
                 </div>
             </div>
             <button class="btn btn-primary view-all">VIEW ALL GAMES ></button>
@@ -94,7 +102,7 @@
                 <div class="service-card">
                     <div class="service-icon">🎮</div>
                     <h3>Game Development</h3>
-                    <p>End-to-end game creation from concept to launch. We specialize in crafting engaging, innovative gaming experiences across multiple platforms with cutting-edge technology and creative storytelling.</p>
+                    <p>End-to-end game creation from concept to launch. We specialize in crafting engaging, innovative gaming experiences across multiple platforms.</p>
                     <ul>
                         <li>✓ Full Development Pipeline</li>
                         <li>✓ Engine Optimization</li>
@@ -104,7 +112,7 @@
                 <div class="service-card">
                     <div class="service-icon">💡</div>
                     <h3>Game Consulting</h3>
-                    <p>Expert guidance for game development, monetization strategies, and market positioning. We help turn your vision into a successful gaming experience with proven industry insights.</p>
+                    <p>Expert guidance for game development, monetization strategies, and market positioning. We help turn your vision into a successful gaming experience.</p>
                     <ul>
                         <li>✓ Design Strategy</li>
                         <li>✓ Monetization Optimization</li>
@@ -119,7 +127,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
